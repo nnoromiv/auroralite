@@ -12,7 +12,7 @@ const Home = () => {
             <ModeSwitch />
             <Socials />
             <Hero />
-            <div className='absolute bottom-5 z-50 flex flex-row gap-3 max-pn:flex-col text-center'>
+            <div className='fixed bottom-3 z-50 flex flex-row gap-3 max-pn:flex-col text-center'>
                 <Link href={'https://bscscan.com/token/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'}>
                     <h1 className='underline font-bold cursor-pointer'>Bsc Scan</h1>
                 </Link>
