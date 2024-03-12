@@ -19,6 +19,9 @@ const Home = () => {
                 <Link href={'https://pancakeswap.com/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'}>
                     <h1 className='underline font-bold cursor-pointer'>Pancake Swap</h1>
                 </Link>
+                <Link href={'mailTo:auroraliteaal@proton.me'}>
+                    <h1 className='underline font-bold cursor-pointer'>Official Mail</h1>
+                </Link>
             </div>
         </main>
     )
