@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import ModeSwitch from "@/app/ModeSwitcher";
-import { NAV } from "../constants";
+import { MobileNav } from "../constants";
 
 const itemVariants: Variants = {
   open: {
@@ -68,7 +67,7 @@ const MobileNavBar = () => {
         className="flex flex-col bg-whiteRabbit dark:bg-base-200 p-5 z-10"
       >
         {
-          NAV.map((item: any, index: number) => (
+          MobileNav.map((item: any, index: number) => (
             item.name === 'Home' ?
               <motion.li className="text-xl text-black dark:text-whiteRabbit" variants={itemVariants} key={index}  >
                 <Link href={item.link}>{item.name} </Link>

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { HoveredLink, Menu, MenuItem } from './ui/Menu'
 import { cn } from '../utils/cn'
 import { NavBarProps } from '../types'
-import { NAV } from '../constants'
+import { Nav } from '../constants'
 import MobileNavBar from './MobileNavBar'
 
 const NavBar: React.FC<NavBarProps> = ({ className }) => {
@@ -21,7 +21,7 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
                     </div>
                 </MenuItem>
                 {
-                    NAV.map((item: any, index:number) => (
+                    Nav.map((item: any, index:number) => (
                         <HoveredLink key={index} href={item.link}>{item.name}</HoveredLink>
                     ))
                 }
