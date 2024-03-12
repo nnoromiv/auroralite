@@ -1,4 +1,4 @@
-import { faTelegram, faTelegramPlane, faXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faMailchimp, faTelegram, faTelegramPlane, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 
 export const Social = [
     {
@@ -13,6 +13,10 @@ export const Social = [
         icon: faTelegram,
         link: 'https://www.t.me/auroralitegroup/'
     },
+    {
+        icon: faMailchimp,
+        link: 'mailTo:auroraliteaal@proton.me'
+    }
 ]
 
 export const Nav = [
@@ -46,5 +50,9 @@ export const MobileNav = [
     {
         name: 'Bsc Scan',
         link: 'https://bscscan.com/token/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'
+    },
+    {
+        name: 'Official Mail',
+        link: 'mailTo:auroraliteaal@proton.me'
     }
 ]
