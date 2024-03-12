@@ -78,7 +78,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem]  bg-white dark:bg-slate-950 "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-96 flex-col items-center">
         {children}
         <Image alt="null" src={'/image.png'} width={500} height={500} className="absolute max-pn:mt-20"/>
       </div>
