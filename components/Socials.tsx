@@ -10,7 +10,7 @@ const Socials = () => {
             {
                 Social.map((item: any, index: number) => (
                     <Link key={index} href={item.link} target='_blank'>
-                        <FontAwesomeIcon icon={item.icon} size='4x' className='text-black w-[40px] dark:text-white' />
+                        <FontAwesomeIcon icon={item.icon} size='2x' className='text-black w-[40px] dark:text-white' />
                     </Link>
                 ))
             }

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Home = () => {
     return (
-        <main className="flex min-h-screen h-full overflow-hidden flex-col items-center justify-between bg-white dark:bg-base-200">
+        <main className="flex min-h-screen overflow-hidden flex-col items-center justify-between bg-white dark:bg-base-200">
             <NavBar />
             <ModeSwitch />
             <Socials />

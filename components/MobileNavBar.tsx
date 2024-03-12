@@ -22,7 +22,7 @@ const MobileNavBar = () => {
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="menu absolute w-full top-0 right-0"
+      className="menu w-full top-0 right-0"
     >
       <motion.button
         whileTap={{ scale: 0.97 }}
