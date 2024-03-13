@@ -17,7 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="">Pancake Swap</HoveredLink>
                         <HoveredLink href="">Dex</HoveredLink>
-                        <HoveredLink href="/branding">Binance</HoveredLink>
+                        <HoveredLink href="">Binance</HoveredLink>
                     </div>
                 </MenuItem>
                 {

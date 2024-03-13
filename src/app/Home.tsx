@@ -1,12 +1,25 @@
 'use client'
 
-import React from 'react'
-import { Hero, NavBar, Socials } from '../../components'
+import React, { useEffect, useState } from 'react'
+import { Hero, Loading, NavBar, Socials } from '../../components'
 import ModeSwitch from './ModeSwitcher'
 import Link from 'next/link'
 
 const Home = () => {
+    const [ load, setLoad ] = useState(true)
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setLoad(false)
+        }, 3000)
+
+        return () => clearTimeout(timeoutId)
+    },[])
+    
     return (
+        load ?
+        <Loading />
+        :
         <main className="flex min-h-screen overflow-hidden flex-col items-center justify-between bg-white dark:bg-base-200">
             <NavBar />
             <ModeSwitch />

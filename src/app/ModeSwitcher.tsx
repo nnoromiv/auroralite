@@ -12,7 +12,7 @@ const ModeSwitch= () => {
         } else if(currentTheme === 'light'){
             setTheme('dark')
         } else {
-         setTheme('system')   
+         setTheme('dark')   
         }
     }
     return (

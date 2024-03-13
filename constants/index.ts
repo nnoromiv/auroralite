@@ -1,4 +1,4 @@
-import { faMailchimp, faTelegram, faTelegramPlane, faXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faMailchimp, faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 
 export const Social = [
     {
