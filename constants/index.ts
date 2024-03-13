@@ -7,7 +7,7 @@ export const Social = [
     },
     {
         icon: faXTwitter,
-        link: 'https://x.com/auroralite'
+        link: 'https://x.com/auroraliteaal'
     },
     {
         icon: faTelegram,
