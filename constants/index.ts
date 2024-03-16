@@ -3,7 +3,7 @@ import { faMailchimp, faTelegram, faXTwitter } from "@fortawesome/free-brands-sv
 export const Social = [
     {
         icon: faTelegram,
-        link: 'https://www.t.me/auroralitechannel/'
+        link: 'https://www.t.me/auroraliteaalchannel/'
     },
     {
         icon: faXTwitter,
@@ -11,7 +11,7 @@ export const Social = [
     },
     {
         icon: faTelegram,
-        link: 'https://www.t.me/auroralitegroup/'
+        link: 'https://www.t.me/auroraliteaalgroup/'
     },
     {
         icon: faMailchimp,
