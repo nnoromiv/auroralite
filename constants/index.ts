@@ -15,7 +15,7 @@ export const Social = [
     },
     {
         icon: faMailchimp,
-        link: 'mailTo:auroraliteaal@proton.me'
+        link: 'mailTo:contact@auroraliteaal.xyz'
     }
 ]
 
@@ -53,6 +53,6 @@ export const MobileNav = [
     },
     {
         name: 'Official Mail',
-        link: 'mailTo:auroraliteaal@proton.me'
+        link: 'mailTo:contact@auroraliteaal.xyz'
     }
 ]
