@@ -29,11 +29,11 @@ const Home = () => {
                 <Link href={'https://bscscan.com/token/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'}>
                     <h1 className='underline font-bold cursor-pointer'>Bsc Scan</h1>
                 </Link>
-                <Link href={'https://pancakeswap.com/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'}>
+                <Link href={'https://pancakeswap.finance/swap?outputCurrency=0x13Ff78AacA7dc307eE944127C6D617bA949D491A'}>
                     <h1 className='underline font-bold cursor-pointer'>Pancake Swap</h1>
                 </Link>
                 <Link href={'mailTo:contact@auroraliteaal.xyz'}>
-                    <h1 className='underline font-bold cursor-pointer'>Official Mail</h1>
+                    <h1 className='underline font-bold cursor-pointer'>Contact Mail</h1>
                 </Link>
             </div>
         </main>

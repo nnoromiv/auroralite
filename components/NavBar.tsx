@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
                 <h1 className='font-bold'>Aurora Lite</h1>
                 <MenuItem setActive={setActive} active={active} item="Buy">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="">Pancake Swap</HoveredLink>
+                        <HoveredLink href="https://pancakeswap.finance/swap?outputCurrency=0x13Ff78AacA7dc307eE944127C6D617bA949D491A">Pancake Swap</HoveredLink>
                         <HoveredLink href="">Dex</HoveredLink>
                         <HoveredLink href="">Binance</HoveredLink>
                     </div>
