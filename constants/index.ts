@@ -1,5 +1,9 @@
 import { faMailchimp, faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons"
-import { link } from "fs"
+
+export const LOGO = '/public/image.png'
+
+export const BG_ONE = 'https://assets-global.website-files.com/65a53f0850c4d385b95f5fb5/65a6cb04aae1066cf96c1dac_18%20Art.svg'
+export const BG_TWO = 'https://assets-global.website-files.com/65a53f0850c4d385b95f5fb5/65a6cd205ad0c6eac1cfc7b4_19%20Art.svg'
 
 export const Social = [
     {
@@ -32,6 +36,10 @@ export const Nav = [
     {
         name: 'Lite Paper',
         link: 'https://auroralite.gitbook.io/aurora-lite-paper'
+    },
+    {
+        name: 'Airdrop',
+        link: '/construction'
     }
 ]
 
@@ -55,6 +63,10 @@ export const MobileNav = [
     {
         name: 'Bsc Scan',
         link: 'https://bscscan.com/token/0x13Ff78AacA7dc307eE944127C6D617bA949D491A'
+    },
+    {
+        name: 'Airdrop',
+        link: '/construction'
     },
     {
         name: 'Contact Mail',

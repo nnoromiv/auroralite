@@ -21,7 +21,7 @@ const Home = () => {
         <Loading />
         :
         <main className="flex min-h-screen overflow-hidden flex-col items-center justify-between bg-white dark:bg-base-200">
-            <NavBar />
+            <NavBar className='' />
             <ModeSwitch />
             <Socials />
             <Hero />

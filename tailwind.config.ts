@@ -15,11 +15,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation : {
+        'notification' : "4s ease-in-out forwards moveLeftToRight, 5s hideElement 4s forwards ",
+      },
       colors: {
         "whiteRabbit": " #f7ede8",
         "grey": " #353535",
         "text-grey": " #808080",
-        "bulb-grey": '#353535'
+        "bulb-grey": '#353535',
+        "wine": " #61004f",
+        "monadBlue": " #200052",
+        "electricIce": " #5feddf",
+        "blueTint2": " #3d2487",
+        "blueTint": " #ccc4fc",
+        "monadPurple": " #836ef9",
+        "berry": " #a0055d",
+        "relumeLibraryLiterLWhite": "#FFFFFF",
+        "relumeLibraryLiterLBlack": "#000000",
       },
       screens: {
         'lt': '1025px',

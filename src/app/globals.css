@@ -2,12 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
-    scroll-behavior: smooth;
-    transition: all 3s ease-in 200ms;
+html {
+  scroll-behavior: smooth;
+  transition: all 3s ease-in 200ms;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+.monadText {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #200052;
+  }
+
+.monadTextDark {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideElement {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

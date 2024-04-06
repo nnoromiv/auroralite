@@ -1,7 +1,11 @@
+import AirdropNavBar from "./airdrop/NavBar";
+import Button from "./Button";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Loading from "./Loading";
 import MobileNavBar from "./MobileNavBar";
 import NavBar from "./NavBar";
+import Notification from "./Notification";
 import Socials from "./Socials";
 
 
@@ -10,5 +14,9 @@ export {
     Hero,
     Socials,
     MobileNavBar,
-    Loading
+    Loading,
+    Footer,
+    Notification,
+    Button,
+    AirdropNavBar
 }
