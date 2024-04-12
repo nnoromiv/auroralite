@@ -8,7 +8,7 @@ import { useAccount } from '../../../hooks'
 import { AirdropNavBar, Footer, Notification, Socials } from '../../../components'
 import Image from 'next/image'
 import { BG_ONE, BG_TWO } from '../../../constants'
-import { Faucet, NavBar } from '../../../components/admin[admin]airdrop_hidden$aal'
+import { Faucet, NavBar } from '../../../components/admin_admin$airdrop_hidden$aal'
 
 const Home = () => {
 
@@ -36,7 +36,7 @@ const Home = () => {
         } catch (error: any) {
           setNotification({
             type: 'error',
-            message: error
+            message: 'Use website on a Trustwallet / Metamask Browser'
           })
         }
       }
