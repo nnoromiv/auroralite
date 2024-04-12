@@ -17,6 +17,7 @@ const Schema = Yup.object().shape({
 const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
 
   const [countDown, setCountDown] = useState(0)
+  const [validity, setValidity] = useState(false)
   const [notification, setNotification] = useState({
     type: '',
     message: ''
@@ -61,6 +62,14 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
     }
   }
 
+  const handleValidity = (account: string) => {
+    account === '' &&
+    setNotification({
+      message: 'Please connect an account',
+      type: 'error'
+    })
+  }
+
   return (
     <div className='bg-blueTint mt-5 mx-40 p-4 rounded-lg border-[2px] border-monadBlue relative dark:bg-blueTint2 dark:border-black max-[1024px]:mx-20 max-[768px]:mx-10 max-[426px]:mx-4'>
       {
@@ -74,7 +83,6 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
       <p className='text-monadBlue text-sm dark:text-white mt-3'>This airdrop confirms if the address is owned by a human, and checks for airdrop eligibility</p>
       {/* <CountDown seconds={countDown}/> */}
 
-      <Button type='submit' onClick={() => console.log()} style='btn-wide w-full my-5 bg-white text-black dark:bg-base-200 dark:text-white' title='Check Validity' />
 
       <div className='flex mt-2 max-[376px]:w-full flex-row items-center justify-between'>
         {
@@ -85,7 +93,14 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
           >{account}</h1>
         }
       </div>
-      <Formik
+
+      <Button type='submit' onClick={() => handleValidity(account)} style='btn-wide w-full my-5 bg-white text-black dark:bg-base-200 dark:text-white' title='Check Account Validity' />
+
+      {
+        !validity ? 
+        <div></div>
+        :
+        <Formik
         initialValues={{
           address: ''
         }}
@@ -114,6 +129,7 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
           </>
         )}
       </Formik>
+      }
     </div>
   )
 }

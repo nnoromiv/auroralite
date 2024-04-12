@@ -55,11 +55,6 @@ const CopyAddress = (address: string) => {
     }
 }
 
-// AAL
-
-
-
-
 export {
     InitializeContract,
     InitApp,

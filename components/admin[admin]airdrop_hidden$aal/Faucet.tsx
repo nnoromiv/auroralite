@@ -116,7 +116,10 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
           message: 'Transaction was cancelled'
         })
       } else {
-        console.log(error.message)
+        setNotification({
+          type: 'error',
+          message: error.message
+        })
       }
     }
   }
@@ -131,9 +134,10 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
         />
       }
       <h1 className='text-white font-bold text-6xl dark:text-base-200 max-[768px]:text-5xl'>Distribute Tokens</h1>
+      <Button style='' title='Toggle Airdrop' type='submit' onClick={toggleAirdrop} />
       <div className='flex items-center gap-3 text-white mb-2'>
         <h1 className='text-red-900'>Off</h1>
-        <input type="checkbox" className="toggle toggle-primary" checked={airdropStatus} onChange={toggleAirdrop} />
+        <input type="checkbox" className="toggle toggle-primary" checked={airdropStatus} disabled/>
         <h1 className='text-green-900'>On</h1>
       </div>
       <div className='flex items-center gap-3 text-white mb-2'>
