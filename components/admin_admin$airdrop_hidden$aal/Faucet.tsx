@@ -48,6 +48,7 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
   })
 
   const toggleAirdrop = async () => {
+    console.log(account, contractInstance)
     try {
       const result = await contractInstance._methods.toggleAirdrop().send({ from: account })
 
@@ -137,7 +138,7 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
       <Button style='' title='Toggle Airdrop' type='submit' onClick={toggleAirdrop} />
       <div className='flex items-center gap-3 text-white mb-2'>
         <h1 className='text-red-900'>Off</h1>
-        <input type="checkbox" className="toggle toggle-primary" checked={airdropStatus} disabled/>
+        <input type="checkbox" className="toggle toggle-primary" checked={airdropStatus}/>
         <h1 className='text-green-900'>On</h1>
       </div>
       <div className='flex items-center gap-3 text-white mb-2'>
@@ -209,10 +210,10 @@ const Faucet: React.FC<FaucetProps> = ({ account, contractInstance }) => {
                   />
                 </Form>
                 {
-                  !isValid && !(values.file === null) ?
+                  // !isValid && !(values.file === null) ?
                   <Button type='submit' onClick={() => airdropToken()} style='btn-wide w-full my-5 bg-white text-black dark:bg-base-200 dark:text-white' title='Submit' />
-                    :
-                  <Button type='submit' style='btn-wide w-full my-5 bg-white text-black disabled opacity-30 dark:bg-base-200 dark:text-white' title='Submit' />
+                  //   :
+                  // <Button type='submit' style='btn-wide w-full my-5 bg-white text-black disabled opacity-30 dark:bg-base-200 dark:text-white' title='Submit' />
                 }
               </>
             )}
